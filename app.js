@@ -1,6 +1,9 @@
 const express = require('express');
 const CONFIG = require('./config/config');
 const app = express();
+const { startEmailHandling } = require('./services/emailHandler');
+
+startEmailHandling();
 
 // Server
 const port = CONFIG.port;
