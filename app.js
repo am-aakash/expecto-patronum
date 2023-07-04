@@ -3,6 +3,7 @@ const CONFIG = require('./config/config');
 const app = express();
 const { startEmailHandling } = require('./services/emailHandler');
 
+// Starts the email handling process
 startEmailHandling();
 
 // Server
